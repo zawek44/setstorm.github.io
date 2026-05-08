@@ -2,10 +2,11 @@
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SetStorm — Karuzela #1: Powrót do treningu</title>
+<meta name="viewport" content="width=1080, initial-scale=1.0">
+<title>SetStorm karuzela 1 - 6 osobnych slajdów</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:wght@300;400&display=swap" rel="stylesheet">
 <style>
+
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
   --black:#060606;
@@ -620,23 +621,75 @@ body{
   margin-bottom:0.5rem;
   font-weight:600;
 }
+
+
+
+/* Canva import version: each slide is a standalone 1080x1080 page. */
+html, body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #060606;
+}
+
+body {
+  display: block;
+  font-family: var(--body);
+}
+
+.canva-pages {
+  width: 1080px;
+  margin: 0 auto;
+  background: #060606;
+}
+
+.slide-page {
+  width: 1080px;
+  height: 1080px;
+  position: relative;
+  overflow: hidden;
+  background: #060606;
+  margin: 0;
+  page-break-after: always;
+  break-after: page;
+}
+
+.slide-page .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(2.8421052632);
+  transform-origin: top left;
+}
+
+.slide-ticker-inner {
+  animation: none !important;
+}
+
+@page {
+  size: 1080px 1080px;
+  margin: 0;
+}
+
+@media print {
+  html, body, .canva-pages {
+    width: 1080px;
+    margin: 0;
+    padding: 0;
+    background: #060606;
+  }
+  .slide-page {
+    margin: 0;
+  }
+}
+
 </style>
 </head>
 <body>
-
-<!-- HEADER -->
-<div class="page-header">
-  <div class="page-logo">SET<span>STORM</span></div>
-  <div class="page-meta">Karuzela #1 · Powrót do treningu · Wtorek · Brand Kit Storm Dark</div>
-</div>
-
-<!-- CAROUSEL -->
-<div class="carousel-strip">
-
-  <!-- SLIDE 1 — HOOK -->
-  <div>
-    <div class="slide-label">Slajd 01 — Hook</div>
-    <div class="slide s1">
+<main class="canva-pages">
+<section class="slide-page" aria-label="Slajd 01">
+<div class="slide s1">
       <div class="s1-border-accent"></div>
       <div class="s1-corner"></div>
       <div class="s1-corner-bl"></div>
@@ -666,12 +719,9 @@ body{
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- SLIDE 2 — BŁĄD / SPLIT -->
-  <div>
-    <div class="slide-label">Slajd 02 — Najczęstszy błąd</div>
-    <div class="slide s2">
+</section>
+<section class="slide-page" aria-label="Slajd 02">
+<div class="slide s2">
       <div class="slide-bg-num" style="font-size:12rem;opacity:0.03">2</div>
       <div class="slide-logo" style="top:3.2rem">SET<span>STORM</span></div>
       <div class="slide-num" style="top:3.2rem">02 / 06</div>
@@ -706,12 +756,9 @@ body{
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- SLIDE 3 — CHECKLIST -->
-  <div>
-    <div class="slide-label">Slajd 03 — Checklista</div>
-    <div class="slide s3">
+</section>
+<section class="slide-page" aria-label="Slajd 03">
+<div class="slide s3">
       <div class="slide-bg-num" style="font-size:12rem">3</div>
       <div class="slide-logo">SET<span>STORM</span></div>
       <div class="slide-num">03 / 06</div>
@@ -764,12 +811,9 @@ body{
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- SLIDE 4 — PLAN TYGODNIA -->
-  <div>
-    <div class="slide-label">Slajd 04 — Plan tygodnia</div>
-    <div class="slide s4">
+</section>
+<section class="slide-page" aria-label="Slajd 04">
+<div class="slide s4">
       <div class="slide-bg-num" style="font-size:12rem">4</div>
       <div class="slide-logo">SET<span>STORM</span></div>
       <div class="slide-num">04 / 06</div>
@@ -826,12 +870,9 @@ body{
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- SLIDE 5 — SKALA ZMĘCZENIA -->
-  <div>
-    <div class="slide-label">Slajd 05 — Dobra zasada</div>
-    <div class="slide s5">
+</section>
+<section class="slide-page" aria-label="Slajd 05">
+<div class="slide s5">
       <div class="slide-bg-num" style="font-size:12rem">5</div>
       <div class="slide-logo">SET<span>STORM</span></div>
       <div class="slide-num">05 / 06</div>
@@ -871,12 +912,9 @@ body{
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- SLIDE 6 — CTA -->
-  <div>
-    <div class="slide-label">Slajd 06 — CTA</div>
-    <div class="slide s6">
+</section>
+<section class="slide-page" aria-label="Slajd 06">
+<div class="slide s6">
       <div class="slide-bg-num" style="font-size:11rem">6</div>
       <div class="slide-logo">SET<span>STORM</span></div>
       <div class="slide-num">06 / 06</div>
@@ -913,55 +951,8 @@ body{
         </div>
       </div>
     </div>
-  </div>
-
-</div>
-
-<!-- CAPTION SECTION -->
-<div class="caption-section">
-  <div class="cap-label">Opis posta — gotowy do wklejenia</div>
-  <div class="cap-grid">
-    <div>
-      <div class="cap-body">Wracanie do treningu po przerwie to nie jest konkurs na największy zakwas w okolicy.
-
-Jeśli nie ćwiczyłeś kilka miesięcy albo kilka lat — ciało potrzebuje spokojnego wejścia. Nie dlatego, że jesteś „za stary". Tylko dlatego, że układ nerwowy, stawy, ścięgna i mięśnie muszą znowu złapać rytm.
-
-Na start najlepiej działa prosty plan: <strong>2 treningi w tygodniu</strong>, podstawowe ruchy, rozsądny ciężar i obserwacja reakcji ciała.
-
-Jeśli po treningu czujesz się lepiej, stabilniej i masz ochotę wrócić — dobry znak. Jeśli po pierwszej sesji przez 5 dni schodzisz po schodach bokiem — plan był bardziej bohaterski niż mądry.</div>
-      <div class="cap-cta-box">
-        <div class="cap-cta-text">Napisz „START" jeśli chcesz wrócić bez robienia głupot na dzień dobry.</div>
-      </div>
-      <div class="cap-tags">#trenerpersonalnykrakow #trening30plus #powrotdotreningu #treningbezspiny #sprawnosc #treningsilowy #treningfunkcjonalny #krakowfit #facet30plus #ruchbezbolu</div>
-    </div>
-    <div class="cap-meta">
-      <div class="cap-meta-item">
-        <div class="cap-meta-label">Dzień publikacji</div>
-        <div class="cap-meta-val">Wtorek</div>
-      </div>
-      <div class="cap-meta-item">
-        <div class="cap-meta-label">Cel</div>
-        <div class="cap-meta-val">Edukacja + zapis na konsultację</div>
-      </div>
-      <div class="cap-meta-item">
-        <div class="cap-meta-label">Grupa docelowa</div>
-        <div class="cap-meta-val">Mężczyźni 30+ powracający po przerwie</div>
-      </div>
-      <div class="cap-meta-item">
-        <div class="cap-meta-label">CTA</div>
-        <div class="cap-meta-val">Napisz „START" w wiadomości prywatnej</div>
-      </div>
-      <div class="cap-meta-item">
-        <div class="cap-meta-label">Format slajdów</div>
-        <div class="cap-meta-val">1080 × 1080 px (1:1) · 6 slajdów</div>
-      </div>
-      <div class="cap-meta-item">
-        <div class="cap-meta-label">Brand Kit</div>
-        <div class="cap-meta-val">Storm Dark · Bebas Neue · #c8a96e</div>
-      </div>
-    </div>
-  </div>
-</div>
+</section>
+</main>
 
 </body>
 </html>
