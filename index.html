@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="SetStorm - trening personalny w Krakowie z Michałem &quot;Zawkiem&quot; Zawiślanem. Pakiety treningowe 4, 8 i 12 treningów miesięcznie w ZdroFit przy ul. Puszkarskiej 7G.">
+  <meta name="description" content="Warsztat Serii - trening personalny w Krakowie z Michałem &quot;Zawkiem&quot; Zawiślanem. Pakiety treningowe 4, 8 i 12 treningów miesięcznie w My Fitness Place przy ul. Puszkarskiej 7G. Trening Personalny Kraków Michał Zawiślan.">
   <meta name="theme-color" content="#060606">
-  <meta property="og:title" content="SetStorm - Michał &quot;Zawek&quot; Zawiślan | Trener personalny Kraków">
+  <meta property="og:title" content="Warsztat Serii - Michał &quot;Zawek&quot; Zawiślan | Trener personalny Kraków">
   <meta property="og:description" content="Trening oparty o system, ciężką pracę i realny plan działania. Umów bezpłatną konsultację stacjonarną.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/portret-2k.jpg">
-  <title>SetStorm - Michał "Zawek" Zawiślan | Trener Personalny Kraków</title>
+  <title>Warsztat Serii - Michał "Zawek" Zawiślan | Trener Personalny Kraków</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&family=Barlow:wght@300;400;600&display=swap" rel="stylesheet">
@@ -60,6 +60,8 @@
     .hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(6,6,6,.88) 0%,rgba(6,6,6,.62) 34%,rgba(6,6,6,.08) 68%,rgba(6,6,6,.26) 100%),linear-gradient(0deg,rgba(6,6,6,.9) 0%,rgba(6,6,6,.12) 38%,rgba(6,6,6,.18) 100%),var(--img-hero);background-size:cover;background-position:center right;transform:scale(1.01)}
     .hero-content{position:relative;z-index:2;max-width:760px}
     .eyebrow,.sec-label{font-family:var(--cond);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:1rem}
+    .hero-content>.eyebrow:first-child{font-size:.864rem}
+    
     .hero-headline{font-family:var(--display);font-size:clamp(5rem,13vw,12rem);line-height:.86;letter-spacing:.02em;color:var(--white);margin-bottom:1.35rem}
     .stroke{-webkit-text-stroke:1.5px var(--white);color:transparent}
     .yellow{color:var(--gold)}
@@ -93,31 +95,32 @@
     #proces .item:nth-child(1){background-image:linear-gradient(rgba(17,19,18,.9),rgba(17,19,18,.95)),var(--img-consultation);background-size:cover;background-position:center}
     #proces .item:nth-child(2){background-image:linear-gradient(rgba(17,19,18,.9),rgba(17,19,18,.95)),var(--img-movement);background-size:cover;background-position:center}
     #proces .item:nth-child(3){background-image:linear-gradient(rgba(17,19,18,.9),rgba(17,19,18,.95)),var(--img-decision);background-size:cover;background-position:center}
-    .final-cta{background-color:var(--gold);background-image:linear-gradient(rgba(200,169,110,.92),rgba(200,169,110,.92)),var(--img-outdoor);background-size:cover;background-position:center;text-align:center;color:#080808}.final-cta h2{font-size:clamp(4rem,10vw,9rem);margin-bottom:1rem}.final-cta p{font-family:var(--cond);letter-spacing:.08em;text-transform:uppercase;color:rgba(0,0,0,.58);font-weight:600;margin-bottom:2rem}.final-cta .btn{background:#080808;color:var(--white)}.final-cta .btn:hover{background:#222}
+    .final-cta{background-color:var(--gold);background-image:linear-gradient(rgba(200,169,110,.74),rgba(200,169,110,.74)),var(--img-outdoor);background-size:cover;background-position:center;text-align:center;color:#080808}.final-cta h2{font-size:clamp(4rem,10vw,9rem);margin-bottom:1rem}.final-cta p{font-family:var(--cond);letter-spacing:.08em;text-transform:uppercase;color:rgba(0,0,0,.58);font-weight:600;margin-bottom:2rem}.final-cta .btn{background:#080808;color:var(--white)}.final-cta .btn:hover{background:#222}
     footer{background:#101110;padding:2rem clamp(1.25rem,4vw,4rem);display:flex;justify-content:space-between;align-items:center;gap:1.5rem;border-top:1px solid var(--line);flex-wrap:wrap}footer p,footer a{font-family:var(--cond);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);text-decoration:none}footer a{margin-left:1.4rem}footer a:hover{color:var(--white)}
     .fade-up{opacity:0;transform:translateY(22px);transition:opacity .65s,transform .65s}.fade-up.visible{opacity:1;transform:translateY(0)}
     @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ticker-inner{animation:none}.fade-up{opacity:1;transform:none;transition:none}}
     @media (max-width:920px){.nav-links{display:none}.hero{min-height:92svh}.hero::before{background-position:62% center}.hero-stats{position:relative;right:auto;bottom:auto;margin-top:2.5rem}.split,.grid-3,.contact-options{grid-template-columns:1fr}.item,.item:last-child{border-right:0;border-bottom:1px solid var(--line)}.item:last-child{border-bottom:0}.form-grid{grid-template-columns:1fr}.price{position:static;margin-top:2rem}}
-    @media (max-width:560px){nav{padding:.85rem 1rem}.nav-logo{font-size:1.45rem}.nav-cta{display:none}.hero{min-height:92svh;padding:6.75rem 1rem 2.75rem;align-items:flex-end}.hero::before{background-image:linear-gradient(90deg,rgba(6,6,6,.9) 0%,rgba(6,6,6,.7) 42%,rgba(6,6,6,.28) 74%,rgba(6,6,6,.4) 100%),linear-gradient(0deg,rgba(6,6,6,.9) 0%,rgba(6,6,6,.12) 46%,rgba(6,6,6,.2) 100%),var(--img-hero);background-position:70% center}.hero::after{content:'MICHAŁ \"ZAWEK\" ZAWIŚLAN - TRENER PERSONALNY - KRAKÓW';position:absolute;top:5.7rem;left:1rem;right:1rem;z-index:2;font-family:var(--cond);font-size:.66rem;line-height:1.55;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:700}.hero-content{width:100%;max-width:100%;overflow:visible}.hero .eyebrow{display:none}.eyebrow,.sec-label{font-size:.66rem;letter-spacing:.18em}.hero-headline{font-size:clamp(3.3rem,14.3vw,4.1rem);line-height:.88;letter-spacing:0;max-width:100%;overflow-wrap:normal}.stroke{-webkit-text-stroke:1.15px var(--white)}.hero-sub{font-size:.98rem;line-height:1.55;letter-spacing:.055em;max-width:100%;margin-bottom:1.55rem}.hero-actions{gap:.8rem;max-width:calc(100% - 9.8rem)}.hero-actions .btn{width:100%;max-width:100%;padding-inline:.75rem;font-size:.76rem;letter-spacing:.1em}.hero-stats{position:absolute;right:1rem;bottom:4.7rem;margin-top:0;gap:1.05rem;z-index:3}.hstat{text-align:left}.hstat-n{font-size:2.25rem}.hstat-l{font-size:.52rem;letter-spacing:.12em}section{padding:4.5rem 1rem}.nums{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.num-n{font-size:2.25rem}.micro-line{white-space:normal}.contact-option{padding:1.15rem}.form-actions .btn{width:100%}footer a{margin-left:0;margin-right:1rem}}
+    @media (max-width:560px){nav{padding:.85rem 1rem}.nav-logo{font-size:1.45rem}.nav-cta{display:none}.hero{min-height:92svh;padding:6.75rem 1rem 2.75rem;align-items:flex-end}.hero::before{background-image:linear-gradient(90deg,rgba(6,6,6,.9) 0%,rgba(6,6,6,.7) 42%,rgba(6,6,6,.28) 74%,rgba(6,6,6,.4) 100%),linear-gradient(0deg,rgba(6,6,6,.9) 0%,rgba(6,6,6,.12) 46%,rgba(6,6,6,.2) 100%),var(--img-hero);background-position:70% center}.hero::after{content:'MICHAŁ \"ZAWEK\" ZAWIŚLAN - TRENER PERSONALNY - KRAKÓW';position:absolute;top:5.7rem;left:1rem;right:1rem;z-index:2;font-family:var(--cond);font-size:.66rem;line-height:1.55;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:700}.hero-content{width:100%;max-width:100%;overflow:visible}.hero .eyebrow{display:none}.eyebrow,.sec-label{font-size:.66rem;letter-spacing:.18em}
+    .hero-headline{font-size:clamp(3.3rem,14.3vw,4.1rem);line-height:.88;letter-spacing:0;max-width:100%;overflow-wrap:normal}.stroke{-webkit-text-stroke:1.15px var(--white)}.hero-sub{font-size:.98rem;line-height:1.55;letter-spacing:.055em;max-width:100%;margin-bottom:1.55rem}.hero-actions{gap:.8rem;max-width:calc(100% - 9.8rem)}.hero-actions .btn{width:100%;max-width:100%;padding-inline:.75rem;font-size:.76rem;letter-spacing:.1em}.hero-stats{position:absolute;right:1rem;bottom:4.7rem;margin-top:0;gap:1.05rem;z-index:3}.hstat{text-align:left}.hstat-n{font-size:2.25rem}.hstat-l{font-size:.52rem;letter-spacing:.12em}section{padding:4.5rem 1rem}.nums{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.num-n{font-size:2.25rem}.micro-line{white-space:normal}.contact-option{padding:1.15rem}.form-actions .btn{width:100%}footer a{margin-left:0;margin-right:1rem}}
   </style>
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"LocalBusiness",
-    "name":"SetStorm - Michał \"Zawek\" Zawiślan",
+    "name":"Warsztat Serii - Michał \"Zawek\" Zawiślan",
     "description":"Trening personalny, pakiety treningowe, plany treningowe i konsultacje w Krakowie.",
     "telephone":"+48535599713",
     "email":"mi.zawislan@gmail.com",
     "address":{"@type":"PostalAddress","streetAddress":"ul. Puszkarska 7G","addressLocality":"Kraków","addressCountry":"PL"},
     "areaServed":"Kraków",
-    "url":"https://setstorm.pl"
+    "url":"https://zawek44.github.io"
   }
   </script>
 </head>
 <body>
   <a class="skip-link" href="#kontakt">Przejdź do kontaktu</a>
   <nav aria-label="Główna nawigacja">
-    <a class="nav-logo" href="#top" aria-label="SetStorm">SET<span>STORM</span></a>
+    <a class="nav-logo" href="#top" aria-label="Warsztat Serii">WARSZTAT <span>SERII</span></a>
     <ul class="nav-links">
       <li><a href="#o-mnie">O mnie</a></li>
       <li><a href="#filozofia">Filozofia</a></li>
@@ -129,9 +132,10 @@
   </nav>
 
   <main id="top">
-    <section class="hero" aria-label="SetStorm">
+    <section class="hero" aria-label="Warsztat Serii">
       <div class="hero-content fade-up">
-        <p class="eyebrow">Michał "Zawek" Zawiślan - trener personalny - Kraków</p>
+        <p class="eyebrow">Michał "Zawek" Zawiślan</p>
+ 	<p class="eyebrow">Trener personalny - Kraków</p>
         <h1 class="hero-headline">ZBUDUJ<br><span class="stroke">TRWAŁY</span><br><span class="yellow">FUNDAMENT.</span></h1>
         <p class="hero-sub">Formę buduje się cegła po cegle. Trening ma być ciężki, mądry i możliwy do utrzymania latami.</p>
         <div class="hero-actions">
@@ -147,8 +151,8 @@
 
     <div class="ticker" aria-hidden="true">
       <div class="ticker-inner">
-        <span class="ticker-item">SETSTORM</span><span class="ticker-item">TRENING PERSONALNY</span><span class="ticker-item">SUPERSETS</span><span class="ticker-item">KRAKÓW</span><span class="ticker-item">ZDROFIT PUSZKARSKA</span><span class="ticker-item">MICHAŁ "ZAWEK" ZAWIŚLAN</span>
-        <span class="ticker-item">SETSTORM</span><span class="ticker-item">TRENING PERSONALNY</span><span class="ticker-item">SUPERSETS</span><span class="ticker-item">KRAKÓW</span><span class="ticker-item">ZDROFIT PUSZKARSKA</span><span class="ticker-item">MICHAŁ "ZAWEK" ZAWIŚLAN</span>
+        <span class="ticker-item">WARSZTAT SERII</span><span class="ticker-item">TRENING PERSONALNY</span><span class="ticker-item">SUPERSETS</span><span class="ticker-item">KRAKÓW</span><span class="ticker-item">MFP PUSZKARSKA</span><span class="ticker-item">MICHAŁ "ZAWEK" ZAWIŚLAN</span>
+        <span class="ticker-item">WARSZTAT SERII</span><span class="ticker-item">TRENING PERSONALNY</span><span class="ticker-item">SUPERSETS</span><span class="ticker-item">KRAKÓW</span><span class="ticker-item">MFP PUSZKARSKA</span><span class="ticker-item">MICHAŁ "ZAWEK" ZAWIŚLAN</span>
       </div>
     </div>
 
@@ -163,7 +167,7 @@
         </div>
       </div>
       <div class="copy fade-up">
-        <p class="sec-label">SetStorm - ZdroFit, ul. Puszkarska 7G</p>
+        <p class="sec-label">Warsztat Serii - MFP, ul. Puszkarska 7G</p>
         <p>Nie sprzedaję motywacji, bo motywacja znika po tygodniu. Buduję <strong>dyscyplinę, technikę i treningowy mindset</strong>, który pozwala wracać na salę nawet wtedy, gdy nie chce się ćwiczyć.</p>
         <p>Od dziecka jestem związany ze sportem. Koszykówka, 12 lat treningu siłowego i funkcjonalnego, 4 lata pracy z klientami oraz liczne szkolenia nauczyły mnie jednego: ciało potrzebuje ruchu, ale ruch musi mieć sens.</p>
         <p>Pracuję głównie z ludźmi 30+, którzy chcą zbudować ciało i głowę do treningu na lata. Nie boję się twoich kontuzji, oczekuję tylko gotowości do pracy: minimum raz w tygodniu, bez udawania, że lekki trening załatwi ciężki problem.</p>
@@ -175,8 +179,8 @@
       <p class="sec-label">02 - Filozofia treningu</p>
       <h2 class="fade-up">SUPERSETS.<br><span class="stroke">SYSTEM.</span><br><span class="yellow">WYNIKI.</span></h2>
       <div class="grid-3">
-        <article class="item fade-up"><div class="item-num">01</div><h3>Superserie</h3><p>Dwa ćwiczenia wykonywane kolejno na osobne partie mięśniowe. Mniej przestojów, więcej pracy i mocniejszy bodziec dla całego ciała.</p></article>
-        <article class="item fade-up"><div class="item-num">02</div><h3>Burza serii</h3><p>SetStorm to trening, w którym serie są ułożone tak, żeby ciało pracowało konkretnie: siła, kondycja, technika i kontrola ruchu.</p></article>
+        <article class="item fade-up"><div class="item-num">01</div><h3>Superserie</h3><p>Dwa ćwiczenia lub więcej wykonywane kolejno na osobne partie mięśniowe. Mniej przestojów, więcej pracy i mocniejszy bodziec dla całego ciała.</p></article>
+        <article class="item fade-up"><div class="item-num">02</div><h3>Trening hybrydowy</h3><p>To połączenie siły, wytrzymałości i sprawności, tak, żebyś zbydował mocne i funkcjonalne ciało gotowe na różne wyzwania.</p></article>
         <article class="item fade-up"><div class="item-num">03</div><h3>Trwałość</h3><p>Najlepszy plan to ten, który wykonujesz przez rok - nie ten idealny na papierze. Dlatego buduję trening wokół ciebie, nie wokół trendu.</p></article>
       </div>
     </section>
@@ -185,11 +189,11 @@
       <p class="sec-label">03 - Pakiety</p>
       <h2 class="fade-up">WYBIERZ<br><span class="stroke">RYTM</span><br>TRENINGU.</h2>
       <div class="grid-3">
-        <article class="item fade-up"><div class="item-num">01</div><h3>START<br>4 TRENINGI</h3><p>1 raz w tygodniu. Minimum, które pozwala ruszyć technikę, dyscyplinę i regularność. Dobre wejście po przerwie.</p><div class="price"><span>160 zł</span> za trening<small>640 zł / miesiąc</small></div></article>
-        <article class="item fade-up featured"><div class="badge">Najczęściej wybierany</div><div class="item-num">02</div><h3>STANDARD<br>8 TRENINGÓW</h3><p>2 razy w tygodniu. Najlepsza proporcja pracy do regeneracji dla budowania sylwetki, siły i treningowego mindsetu.</p><div class="price"><span>140 zł</span> za trening<small>1120 zł / miesiąc</small></div></article>
-        <article class="item fade-up"><div class="item-num">03</div><h3>INTENSYWNY<br>12 TRENINGÓW</h3><p>3 razy w tygodniu. Dla osób, które chcą mocnego tempa, częstszej korekty techniki i większej odpowiedzialności za proces.</p><div class="price"><span>125 zł</span> za trening<small>1500 zł / miesiąc</small></div></article>
+        <article class="item fade-up"><div class="item-num">01</div><h3>START<br>4 TRENINGI</h3><p>1 raz w tygodniu. Minimum, które pozwala ruszyć technikę, dyscyplinę i regularność. Dobre wejście po przerwie.</p></article>
+        <article class="item fade-up featured"><div class="badge">Najczęściej wybierany</div><div class="item-num">02</div><h3>STANDARD<br>8 TRENINGÓW</h3><p>2 razy w tygodniu. Najlepsza proporcja pracy do regeneracji dla budowania sylwetki, siły i treningowego mindsetu.</p></article>
+        <article class="item fade-up"><div class="item-num">03</div><h3>INTENSYWNY<br>12 TRENINGÓW</h3><p>3 razy w tygodniu. Dla osób, które chcą mocnego tempa, częstszej korekty techniki i większej odpowiedzialności za proces.</p></article>
       </div>
-      <p class="service-note">Pojedynczy trening 60 min: 180 zł. Pierwsza konsultacja stacjonarna 30-50 min jest bezpłatna. Dodatkowo: plan treningowy na 8 tygodni 300 zł, konsultacja online 120 zł.</p>
+      <p class="service-note">Możliwość zakupu pojedynczego treningu. Pierwsza konsultacja stacjonarna 30-50 min jest bezpłatna. Dodatkowe usługi: plan treningowy na 8 tygodni lub konsultacje online.</p>
     </section>
 
     <section class="band results">
@@ -212,7 +216,7 @@
       <p class="sec-label">05 - Pierwsza konsultacja</p>
       <h2 class="fade-up">NAJPIERW<br><span class="stroke">DIAGNOZA.</span><br>POTEM PLAN.</h2>
       <div class="grid-3">
-        <article class="item fade-up"><div class="item-num">01</div><h3>Rozmowa</h3><p>Spotykamy się w ZdroFit. Pytam o pracę, codzienny ruch, kontuzje, operacje, zdrowie, czas w tygodniu oraz cel główny i pierwszy cel po drodze.</p></article>
+        <article class="item fade-up"><div class="item-num">01</div><h3>Rozmowa</h3><p>Spotykamy się w My Fitness Place. Pytam o pracę, codzienny ruch, kontuzje, operacje, zdrowie, czas w tygodniu oraz cel główny i pierwszy cel po drodze.</p></article>
         <article class="item fade-up"><div class="item-num">02</div><h3>Analiza ruchu</h3><p>Sprawdzamy zakresy ruchu w stawach i technikę podstawowych ćwiczeń. To pokazuje, od czego naprawdę trzeba zacząć.</p></article>
         <article class="item fade-up"><div class="item-num">03</div><h3>Decyzja</h3><p>Na koniec dostajesz podsumowanie, sugestię celu podrzędnego i propozycję pakietu. Główny cel treningu zostaje twoją decyzją.</p></article>
       </div>
@@ -258,8 +262,8 @@
   </main>
 
   <footer>
-    <a class="f-logo" href="#top">SET<span>STORM</span></a>
-    <p>© 2026 Michał "Zawek" Zawiślan · ZdroFit Puszkarska 7G</p>
+    <a class="f-logo" href="#top">WARSZTAT <span>SERII</span></a>
+    <p>© 2026 Michał "Zawek" Zawiślan · MFP Puszkarska 7G</p>
     <div>
       <a href="https://www.instagram.com/zawek_personalny" target="_blank" rel="noopener">Instagram</a>
       <a href="mailto:mi.zawislan@gmail.com">Email</a>
@@ -293,7 +297,7 @@
       });
     });
 
-    const savedDraft = localStorage.getItem("setstormConsultationDraft");
+    const savedDraft = localStorage.getItem("warsztatSeriiConsultationDraft");
     if(savedDraft){
       try{
         const data = JSON.parse(savedDraft);
@@ -304,7 +308,7 @@
     }
     fields.forEach(field => field.addEventListener("input", () => {
       const data = Object.fromEntries(new FormData(form).entries());
-      localStorage.setItem("setstormConsultationDraft", JSON.stringify(data));
+      localStorage.setItem("warsztatSeriiConsultationDraft", JSON.stringify(data));
       field.classList.remove("invalid");
     }));
 
@@ -341,14 +345,14 @@
       event.preventDefault();
       if(!validateForm()) return;
       const url = `https://wa.me/${PHONE}?text=${encodeURIComponent(buildMessage())}`;
-      localStorage.removeItem("setstormConsultationDraft");
+      localStorage.removeItem("warsztatSeriiConsultationDraft");
       statusEl.textContent = "Otwieram WhatsApp z gotową wiadomością.";
       window.open(url, "_blank", "noopener");
     });
 
     document.getElementById("emailFallback").addEventListener("click", () => {
       if(!validateForm()) return;
-      const subject = encodeURIComponent("Konsultacja SetStorm");
+      const subject = encodeURIComponent("Konsultacja Warsztat Serii");
       const body = encodeURIComponent(buildMessage());
       window.location.href = `mailto:${EMAIL}?subject=${subject}&body=${body}`;
     });
